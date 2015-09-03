@@ -1,0 +1,277 @@
+@import 'normalizecss/normalize.css'
+
+$serif = didot, times new roman, serif
+$sans-serif = gill sans, helvetica, arial, arial, sans-serif
+$monospace = prestige elite std, consolas, courier new, monospace
+
+*
+  margin: 0
+  padding: 0
+
+html
+  text-size-adjust: auto
+
+.bespoke-parent
+  font-size: 1.5em
+  font-family: $sans-serif
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  overflow: hidden
+  text-align: center
+  background-position: 50% 50%
+  letter-spacing 1.2px
+  text-rendering optimizeLegibility
+
+
+.bespoke-scale-parent
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  pointer-events: none
+  z-index: 1
+  .bespoke-active
+    pointer-events: auto
+
+.bespoke-slide
+  width: 720px
+  height: 480px
+  position: absolute
+  top: 50%
+  left: 50%
+  margin-left: -(@width / 2)
+  margin-top: -(@height / 2)
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  z-index: 1
+  justify-content inherit
+
+
+.bespoke-inactive
+  opacity: 0
+  pointer-events: none
+
+.bespoke-backdrop
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  opacity: 0
+  &-active
+    opacity: 1
+
+.bespoke-progress-parent
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  height: .3vw
+  z-index: 1
+
+.bespoke-progress-bar
+  background: #fff
+  position: absolute
+  top: 0
+  left: 0
+  height: 100%
+
+
+.bespoke-bullet-inactive
+  opacity: 0
+
+strong
+  font-weight: 400
+
+h1 strong
+  font-weight: 600
+
+h1, h2, h3, p, li
+  padding-left: 20px
+  padding-right: 20px
+
+p, li, pre
+  font-weight: 200
+
+h1
+  margin: 0.17em 0
+
+h2
+  font-style: normal
+  font-size: 1.1em
+  margin: 0.1em 0
+
+h3
+  font-style: normal
+  font-size: .6em
+  margin: 1.1em 0
+
+h1, h2, h3
+  font-weight 500
+  -webkit-font-smoothing antialiased
+  text-shadow rgba(0, 0, 0, .01) 0 0 1px
+  text-rendering optimizeLegibility
+  letter-spacing 0
+
+h1
+  max-width 660px
+  font-style normal  
+  font-size 49.3px
+  margin-bottom -5px
+
+ul, ol
+  padding: 0
+  margin: 0
+  text-align: left
+
+li
+  list-style: none
+  margin: .2em
+  font-style: normal
+  transform: translateX(-6px)
+
+ol li
+  list-style decimal
+  padding-left 0
+  margin-left 20px
+  &:before
+    content ''
+
+ul li
+  list-style disc
+  padding-left 0px
+
+ul li:first-child,
+ul li li:first-child,
+ol li:first-child,
+ol li li:first-child
+  margin-top 10px
+
+ul, ol
+  text-align left
+
+ul, ol
+  width 625px
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: .8em;
+  -webkit-margin-end: 15px;
+  -webkit-padding-start: 30px;
+
+ul li ul, ol li ol
+  width 595px
+  -webkit-margin-before: 0.35em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-end: 15px;
+  -webkit-padding-start: 30px;
+
+ul li, ol li
+  margin-top: 10px
+  margin-bottom: 15px
+
+
+ul li ul li ul, ol li ol li ol
+  width 600px
+
+pre
+  background: none !important
+
+code
+  font-family: $monospace !important
+  font-style: normal
+  font-weight: 200 !important
+  text-align: left
+
+a
+  color: currentColor
+  text-decoration: none
+  border-bottom: 1px solid currentColor
+
+a, a:visited, a:active, a:link
+  word-wrap: break-word;
+  border none
+
+table
+  margin-top 30px
+  font-weight normal
+  max-width: 660px
+  margin-left: -14px
+  text-align: left
+
+th
+  font-weight: 400
+  padding-top 10px
+  padding-bottom 10px
+  text-align center
+
+
+td
+  font-weight: 300
+  padding: 12px
+  font-size 18px
+
+strong
+  font-weight 600
+
+
+ul, ol
+  font-size 30px
+
+li
+  font-size 1em
+  font-weight 500
+  -webkit-font-smoothing antialiased
+  text-shadow rgba(0, 0, 0, .01) 0 0 1px
+  text-rendering optimizeLegibility
+  letter-spacing 0.8px
+
+code
+  letter-spacing .05em
+  color #555
+  font-size 0.9em
+
+pre code
+  font-size 1em
+  letter-spacing 0.03em
+
+pre.language-javascript
+  padding 0
+  margin 0
+  margin-bottom .25em
+
+code.lang-sh, code.lang-bash
+  font-family monaco!important
+  display block
+  padding-top 4px
+  padding-bottom 3px
+  padding-left 8px
+  padding-right 8px
+  font-size 23px
+  width 547px
+  -webkit-font-smoothing antialiased
+
+
+blockquote
+  font-style italic
+  font-family helvetica
+  font-weight 300
+  width 500px
+  display flex
+  height 73%
+  justify-content center
+  flex-direction column
+
+.bespoke-slide > ul > li > ul > li, .bespoke-slide > ol > li > ol > li
+  width 92.5%
+
+
+.bespoke-slide > ul, .bespoke-slide > ol
+  margin-left 25px
+  margin-top 5px
+  width 90%
+  line-height 0.99

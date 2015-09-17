@@ -1,6 +1,6 @@
 {
   "name": "@deck/base-theme",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "main": "theme.min.js",
   "files": [
     "theme.min.js"

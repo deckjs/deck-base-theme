@@ -1,7 +1,7 @@
 @import 'normalizecss/normalize.css'
 
 $serif = didot, times new roman, serif
-$sans-serif = gill sans, helvetica, arial, arial, sans-serif
+$sans-serif = gill sans, gill sans mt, helvetica, arial, sans-serif
 $monospace = prestige elite std, consolas, courier new, monospace
 
 *
@@ -121,7 +121,7 @@ h1, h2, h3
 
 h1
   max-width 660px
-  font-style normal  
+  font-style normal
   font-size 49.3px
   margin-bottom -5px
 
@@ -244,7 +244,11 @@ pre.language-javascript
   margin 0
   margin-bottom .25em
 
-code.lang-sh, code.lang-bash
+pre.language-sh, pre.language-bash
+  padding 0
+  margin 0
+
+code.language-sh, code.language-bash
   font-family monaco!important
   display block
   padding-top 4px

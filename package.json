@@ -7,10 +7,10 @@
   ],
   "scripts": {
     "prepublish": "gulp",
-    "standard": "standard --format"
+    "format": "standard --format"
   },
   "pre-commit": [
-    "standard"
+    "format"
   ],
   "standard": {
     "ignore": [

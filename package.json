@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "prepublish": "gulp",
-    "format": "standard --format"
+    "format": "standard"
   },
   "pre-commit": [
     "format"

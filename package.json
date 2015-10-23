@@ -7,10 +7,6 @@
   ],
   "scripts": {
     "prepublish": "gulp",
-<<<<<<< HEAD
-=======
-    "format": "standard --format",
->>>>>>> 157b4775061d8eb09b6cf948b4222edb7a222abe
     "lint": "standard"
   },
   "pre-commit": [

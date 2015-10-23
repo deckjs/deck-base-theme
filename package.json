@@ -1,16 +1,16 @@
 {
   "name": "@deck/base-theme",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "theme.min.js",
   "files": [
     "theme.min.js"
   ],
   "scripts": {
     "prepublish": "gulp",
-    "format": "standard"
+    "lint": "standard"
   },
   "pre-commit": [
-    "format"
+    "lint"
   ],
   "standard": {
     "ignore": [

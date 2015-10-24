@@ -8,7 +8,7 @@
   "scripts": {
     "prepublish": "gulp",
     "lint": "standard",
-    "format": "standard --lint"
+    "format": "standard --format"
   },
   "pre-commit": [
     "lint"
